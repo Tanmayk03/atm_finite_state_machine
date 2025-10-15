@@ -42,6 +42,11 @@ Transitions between these states are managed according to user input, reflecting
     npm start
     ```
 
+## Screenshot
+<img width="1097" height="644" alt="image" src="https://github.com/user-attachments/assets/00f50c3e-85b6-49ca-8d78-751ab06be0e2" />
+<img width="1032" height="559" alt="image" src="https://github.com/user-attachments/assets/49c4bec6-9810-4643-81f7-bc8012aad085" />
+
+
 ## Usage
 
 After starting the simulator, follow the on-screen instructions to interact with the ATM. The application will guide you through each state, demonstrating how automata theory can be applied to real-world systems.
