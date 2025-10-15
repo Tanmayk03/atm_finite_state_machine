@@ -1,16 +1,62 @@
-# React + Vite
+# ATM Simulator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is developed as part of the Automata Theory course, demonstrating the application of finite state machines in simulating the basic functionalities of an Automated Teller Machine (ATM). The simulator models the ATM workflow as a series of states and transitions, providing a practical example of automata concepts.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The ATM Simulator allows users to interact with a virtual ATM, performing operations such as authentication, balance inquiry, deposits, withdrawals, and viewing transaction history. Each operation corresponds to a state in the automaton, and user actions trigger transitions between these states.
 
-## React Compiler
+### States in the Simulator
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Init State**: The starting point where the ATM awaits user input.
+- **Authentication State**: User enters credentials to access their account.
+- **Main Menu State**: User selects an operation (balance, deposit, withdraw, history).
+- **Balance Inquiry State**: Displays the current account balance.
+- **Deposit State**: Allows the user to add funds to their account.
+- **Withdrawal State**: Enables the user to withdraw money, with checks for sufficient balance.
+- **Transaction History State**: Shows a log of previous transactions.
+- **Exit State**: Ends the session and logs out the user.
 
-## Expanding the ESLint configuration
+Transitions between these states are managed according to user input, reflecting the principles of automata theory.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+- User authentication and session management
+- Balance inquiry
+- Deposit and withdrawal operations
+- Transaction history tracking
+- State-driven workflow based on automata concepts
+
+## Getting Started
+
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/yourusername/atm-simulator.git
+    ```
+2. **Install dependencies:**
+    ```bash
+    npm install
+    ```
+3. **Run the simulator:**
+    ```bash
+    npm start
+    ```
+
+## Usage
+
+After starting the simulator, follow the on-screen instructions to interact with the ATM. The application will guide you through each state, demonstrating how automata theory can be applied to real-world systems.
+
+## Contributing
+
+Contributions are welcome! If you have suggestions for new features, improvements, or bug fixes, please open an issue or submit a pull request. For major changes, please discuss them first via an issue to ensure alignment with the project's goals.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Developed for the Automata Theory course
+- Inspired by real-world ATM workflows and finite state machine models
+
+If you have any questions or feedback, feel free to reach out via the repository's issue tracker.
